@@ -17,10 +17,7 @@ TypeQuick is a sleek, modern typing speed test application designed to help user
 ## Live Demo
 
 ## Screenshots
-
-
-
-
+![image](https://github.com/user-attachments/assets/6e3634b3-c718-41ed-9066-5cb4047a6277)
 
 ## Technology Stack
 
