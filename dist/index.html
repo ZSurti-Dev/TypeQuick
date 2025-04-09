@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen font-sans flex items-center justify-center p-4">
+    <div class="container max-w-2xl bg-white rounded-xl shadow-lg overflow-hidden">
+        <header class="bg-indigo-600 p-4 text-white text-center">
+            <h1 class="text-2xl font-bold">
+                <i class="fas fa-keyboard mr-2"></i>Typing Speed Test
+            </h1>
+            <p class="text-indigo-100 text-sm mt-1">Test your typing speed and accuracy</p>
+        </header>
+
+        <div class="p-6">
+            <!-- Sample Text -->
+            <div class="mb-6">
+                <h2 class="text-lg font-medium text-slate-700 mb-2">Sample Text</h2>
+                <div id="sample-text" class="bg-slate-50 rounded-lg p-4 text-slate-700 leading-relaxed border border-slate-200">
+                    In the heart of an ancient forest, where sunlight danced through the leaves, a young girl named Elara discovered a hidden path. This path, overgrown with vibrant wildflowers and tangled vines, seemed to whisper secrets of long-forgotten tales. Curiosity sparked within her, and she decided to follow it, her heart racing with excitement. As she ventured deeper, the air grew cooler, and the sounds of chirping birds faded into a serene silence.
+                </div>
+            </div>
+
+            <!-- Typing Area -->
+            <div class="mb-6">
+                <h2 class="text-lg font-medium text-slate-700 mb-2">Start Typing</h2>
+                <textarea 
+                    id="text" 
+                    class="w-full h-32 p-4 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none resize-none text-slate-700"
+                    placeholder="Start typing here to begin the test..."></textarea>
+            </div>
+
+            <!-- Results & Controls -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div id="result" class="text-lg font-medium text-indigo-700">Start typing to calculate your speed</div>
+                <button id="reset-btn" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                    <i class="fas fa-redo mr-2"></i> Reset
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
